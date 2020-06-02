@@ -29,12 +29,12 @@
             <div class="col-12 col-sm-6 col-lg-5 mb-5">
                 <article>
                     <h3 class="main_footer_title">Receba novidades em seu e-mail!</h3>
-                    <form action="./">
+                    <form action="https://app.convertkit.com/forms/1435472/subscriptions" method="post" class="ajax_off">
                         <label class="form-group">
-                            <input class="form-control" type="text" name="name" placeholder="Seu nome:">
+                            <input class="form-control" type="text" name="fields[first_name]" placeholder="Seu nome:">
                         </label>
                         <label class="form-group">
-                            <input class="form-control" type="text" name="name" placeholder="Seu melhor e-mail:">
+                            <input class="form-control" type="text" name="email_address" placeholder="Seu melhor e-mail:">
                         </label>
                         <div class="d-flex justify-content-end">
                             <button type="submit" class="btn btn-lg">Cadastrar!</button>

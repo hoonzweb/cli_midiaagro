@@ -430,6 +430,10 @@ body {
     font-size: var(--font-large) !important;
 }
 
+.form-control{
+    color: var(--color-primary);
+}
+
 .form-control-border {
     border: 2px var(--color-primary) solid;
 }
