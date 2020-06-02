@@ -397,28 +397,13 @@ class Web extends Controller
      * SITE OPT-IN SUCCESS
      * @param array $data
      */
-    public function success(array $data): void
+    public function success(): void
     {
-        $email = base64_decode($data["email"]);
-        $user = (new User())->findByEmail($email);
-        $newsletter = (new Newsletter())->findByEmail($email);
-
-        if (!empty($data['type']) && $data['type'] == "user" && $user->status != "confirmed") {
-            $user->status = "confirmed";
-            $user->save();
-        }
-
-        if (!empty($data['type']) && $data['type'] == "lead" && $newsletter && $newsletter->status != "confirmed") {
-            $newsletter->status = "confirmed";
-            $newsletter->save();
-        }
-
         $head = $this->seo->render(
             "Cadastro confirmado! - " . CONF_SITE_NAME,
             CONF_SITE_DESC,
             url("/obrigado"),
-            theme("/assets/images/share.jpg"),
-
+            theme("/assets/images/share.jpg")
         );
 
         echo $this->view->render("optin", [
@@ -429,10 +414,6 @@ class Web extends Controller
                 "image" => theme("/assets/images/optin-success.jpg"),
                 "link" => url("/"),
                 "linkTitle" => "Voltar ao Início"
-            ],
-            "track" => (object)[
-                "fb" => "Lead",
-                "aw" => "AW-953362805/yAFTCKuakIwBEPXSzMYD"
             ]
         ]);
     }

@@ -34,7 +34,7 @@ $route->post("/newsletter-register", "Web:newsletterRegister");
 //optin
 $route->group(null);
 $route->get("/confirma", "Web:confirm");
-$route->get("/obrigado/{email}/{type}", "Web:success");
+$route->get("/obrigado", "Web:success");
 
 //services
 $route->group(null);
