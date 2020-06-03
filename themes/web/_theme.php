@@ -65,6 +65,7 @@
 
 <?= $v->insert("_footer"); ?>
 
+<script data-ad-client="ca-pub-6292645270165388" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script src="<?= theme("/assets/scripts.js") ?>"></script>
 <?= $v->section("scripts"); ?>
 </body>
