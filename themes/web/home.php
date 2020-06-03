@@ -112,7 +112,7 @@
                 <?php endforeach; endif; ?>
 
                 <?php if ($tech2): foreach ($tech2 as $post): ?>
-                    <div class="col-12 col-sm-6 col-lg-3 col-xl-6 mb-3 mb-lg-0 mb-xl-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-6 mb-3 mb-lg-0 mb-xl-3">
                         <article class="d-flex d-lg-block d-xl-flex">
                             <div style="flex-basis: 50%;" class="pr-3 pr-lg-0 pr-xl-3">
                                 <a title="<?= $post->title; ?>" href="<?= url("/{$post->uri}"); ?>">
@@ -238,7 +238,7 @@
     </div>
 </div>
 
-<section class="container mb-xl-5">
+<section class="container mb-lg-5">
     <header class="section_header">
         <h2 class="section_header_title">Mais Lidos</h2>
     </header>
