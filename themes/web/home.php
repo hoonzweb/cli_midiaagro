@@ -87,8 +87,8 @@
 
         <div class="col-12 col-md-6">
             <div class="j_ads">
-                <a href="<?= url("/fale-conosco/Anunciar") ?>" title="Anuncie aqui">
-                    <img src="<?= theme("assets/images/anuncie-aqui-ads-538.png") ?>" alt="Anuncie aqui"
+                <a href="#" title="Promoção TX Web">
+                    <img src="<?= theme("assets/images/tx-web-ads-538.png") ?>" alt="Promoção TX Web"
                          class="d-block">
                 </a>
             </div>
@@ -96,7 +96,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container mb-sm-4 mb-xl-0">
     <div class="row">
         <section class="col-12 col-xl-8">
             <header class="section_header">
@@ -161,7 +161,7 @@
     </div>
 </div>
 
-<section class="container">
+<section class="container mb-sm-4">
     <header class="section_header">
         <h2 class="section_header_title">Entrevistas</h2>
     </header>

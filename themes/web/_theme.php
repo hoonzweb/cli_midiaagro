@@ -55,17 +55,29 @@
         <!-- ANÚNCIO -->
         <div class="container mb-3 mb-lg-4 j_ads">
             <a href="#" title="Abapa - 20 Anos">
-                <img src="<?= theme("/assets/images/abapa-coronavirus-ads-1108.jpg") ?>" alt="Abapa - 20 Anos" class="d-block">
+                <img src="<?= theme("/assets/images/abapa-coronavirus-ads-1108.jpg") ?>" alt="Abapa - 20 Anos"
+                     class="d-block">
             </a>
         </div>
     <?php endif; ?>
 
     <?= $v->section("content"); ?>
+
+    <div class="container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Horizontal 1108x100 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:1108px;height:100px"
+             data-ad-client="ca-pub-6292645270165388"
+             data-ad-slot="1741401127"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 </main>
 
 <?= $v->insert("_footer"); ?>
 
-<script data-ad-client="ca-pub-6292645270165388" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script src="<?= theme("/assets/scripts.js") ?>"></script>
 <?= $v->section("scripts"); ?>
 </body>
