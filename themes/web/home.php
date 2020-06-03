@@ -98,7 +98,7 @@
 
 <div class="container">
     <div class="row">
-        <section class="col-12 col-xl-8 mb-4">
+        <section class="col-12 col-xl-8">
             <header class="section_header">
                 <h2 class="section_header_title">Tecnologia</h2>
             </header>
@@ -133,7 +133,7 @@
             </div>
         </section>
 
-        <section class="col-12 col-xl-4 mb-4">
+        <section class="col-12 col-xl-4">
             <header class="section_header">
                 <h2 class="section_header_title">Últimos Eventos</h2>
             </header>
@@ -161,7 +161,7 @@
     </div>
 </div>
 
-<section class="container mb-4">
+<section class="container">
     <header class="section_header">
         <h2 class="section_header_title">Entrevistas</h2>
     </header>
@@ -179,7 +179,7 @@
 
 <div class="container">
     <div class="row">
-        <section class="col-12 col-lg-7 col-xl-8 mb-4">
+        <section class="col-12 col-lg-7 col-xl-8">
             <header class="section_header">
                 <h2 class="section_header_title">Sabores do Campo</h2>
             </header>
@@ -238,7 +238,7 @@
     </div>
 </div>
 
-<section class="container mb-5">
+<section class="container mb-xl-5">
     <header class="section_header">
         <h2 class="section_header_title">Mais Lidos</h2>
     </header>
@@ -275,7 +275,7 @@
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
 
-            <a class="weatherwidget-io" href="https://forecast7.com/pt/n12d08n45d78/luis-eduardo-magalhaes/" data-label_1="LUÍS EDUARDO MAGALHAES" data-label_2="PREVISÃO DO TEMPO" data-icons="Climacons Animated" data-mode="Forecast" data-days="3" data-theme="kiwi" >LUÍS EDUARDO MAGALHAES PREVISÃO DO TEMPO</a>
+            <a class="weatherwidget-io" href="https://forecast7.com/pt/n12d08n45d78/luis-eduardo-magalhaes/" data-label_1="LUÍS EDUARDO MAGALHÃES" data-label_2="PREVISÃO DO TEMPO" data-icons="Climacons Animated" data-mode="Forecast" data-days="3" data-theme="kiwi" >LUÍS EDUARDO MAGALHAES PREVISÃO DO TEMPO</a>
             <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
