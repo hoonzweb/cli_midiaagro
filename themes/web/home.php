@@ -238,7 +238,7 @@
     </div>
 </div>
 
-<section class="container mb-4">
+<section class="container mb-5">
     <header class="section_header">
         <h2 class="section_header_title">Mais Lidos</h2>
     </header>
