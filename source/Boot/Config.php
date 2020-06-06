@@ -39,7 +39,7 @@ if (strpos($_SERVER['HTTP_HOST'], "localhost")) {
  * PROJECT URLs
  */
 define("CONF_URL_BASE", "https://www.midiaagro.com.br");
-define("CONF_URL_TEST", "https://www.localhost/midiaagro");
+define("CONF_URL_TEST", "https://www.localhost/cli_midiaagro");
 
 /**
  * SITE
