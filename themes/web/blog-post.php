@@ -25,6 +25,14 @@
     <div class="post_page_content">
         <div class="htmlchars">
             <h2><?= $post->subtitle; ?></h2>
+            <?php if ($post->video): ?>
+                <div class="embed mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?= $post->video ?>"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            <?php endif; ?>
             <?= html_entity_decode($post->content); ?>
         </div>
 
@@ -82,6 +90,6 @@
 
             <div class="fb-comments" data-href="<?= url("/blog/{$post->uri}"); ?>" data-numposts="5"
                  data-width="100%"></div>
-    </section>
+        </section>
     </div>
 </article>

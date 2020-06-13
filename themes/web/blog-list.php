@@ -7,9 +7,11 @@
             </div>
         </a>
         <?php else: ?>
-        <div class="embed mb-3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/<?= $post->video ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+            <div class="embed mb-3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?= $post->video ?>" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
         <?php endif; ?>
         <header>
             <?php if (!empty($cat)): ?>
