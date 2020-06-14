@@ -51,7 +51,7 @@ class Web extends Controller
          * MAINTENANCE MODE
          */
         $maintenance = 0;
-        if($maintenance && !Auth::user()){
+        if ($maintenance && !Auth::user()) {
             redirect("/ops/manutencao");
         }
     }
@@ -426,7 +426,7 @@ class Web extends Controller
     public function contact(array $data): void
     {
         $head = $this->seo->render(
-            "Fale Conosco - ".CONF_SITE_NAME,
+            "Fale Conosco - " . CONF_SITE_NAME,
             CONF_SITE_DESC,
             url("/fale-conosco"),
             theme("/assets/images/share.jpg")
@@ -439,12 +439,63 @@ class Web extends Controller
     }
 
     /**
+     * SITE CONTACT SEND
+     * @param array $data
+     */
+    public function contactSend(array $data): void
+    {
+//        if (request_limit("contactsend", 1, 60 * 5)) {
+//            $json['message'] = $this->message->error("Aguarde 5 minutos para tentar solicitar novamente.")->render();
+//            echo json_encode($json);
+//            return;
+//        }
+
+        if (in_array("", $data)) {
+            $json['message'] = $this->message->warning("Existem campos em branco!")->before("Ooops: ")->render();
+            echo json_encode($json);
+            return;
+        }
+
+        if (empty($data['email']) || !is_email($data['email'])) {
+            $json['message'] = $this->message->warning("Informe um e-mail válido!")->before("Ooops: ")->render();
+            echo json_encode($json);
+            return;
+        }
+
+        $viewMail = new View(dirname(__DIR__, 2) . "/shared/views/email");
+        $message = $viewMail->render("mail", [
+            "subject" => "Midiaagro - Fale Conosco",
+            "message" => "<h3>Midiaagro - Fale Conosco:</h3>
+                              <p><b>Nome:</b> {$data['first_name']}</p>
+                              <p><b>E-mail:</b> {$data['email']}</p>
+                              <p><b>Assunto:</b> {$data['subject']}</p>
+                              <p><b>Mensagem:</b> {$data['message']}</p>                         
+                              "
+        ]);
+
+        $pushMail = (new Email())->bootstrap(
+            "Midiaagro - Fale Conosco",
+            $message,
+            "contato@midiaagro.com.br",
+            "Midiaagro"
+        )->queue("{$data['email']}", "{$data['first_name']}");
+
+        if ($pushMail) {
+            $json['message'] = $this->message
+                ->success("Mensagem enviada!")
+                ->render();
+            echo json_encode($json);
+            return;
+        }
+    }
+
+    /**
      * SITE ABOUT
      */
     public function about(): void
     {
         $head = $this->seo->render(
-            "Sobre nós - ".CONF_SITE_NAME,
+            "Sobre nós - " . CONF_SITE_NAME,
             CONF_SITE_DESC,
             url("/sobre"),
             theme("/assets/images/share.jpg")

@@ -28,8 +28,8 @@ $route->get("/fale-conosco", "Web:contact");
 $route->get("/fale-conosco/{subject}", "Web:contact");
 $route->get("/sobre", "Web:about");
 
-//newsletter
 $route->post("/newsletter-register", "Web:newsletterRegister");
+$route->post("/fale-conosco/send", "Web:contactSend");
 
 //optin
 $route->group(null);

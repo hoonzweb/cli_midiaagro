@@ -1,6 +1,6 @@
 <div class="dash_content_sidebar">
     <h3 class="icon-asterisk">dashboard</h3>
-    <p class="dash_content_sidebar_desc">Tenha insights poderosos para escalar seus resultaods...</p>
+    <p class="dash_content_sidebar_desc">Tenha insights poderosos para escalar seus resultados...</p>
 
     <nav>
         <?php

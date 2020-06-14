@@ -10,7 +10,7 @@
                     <span class="blog_header_border"></span>
                 </header>
 
-                <form action="">
+                <form action="<?= url("/fale-conosco/send"); ?>" method="post">
                     <label class="form-group mb-4">
                         <span>Primeiro nome:</span>
                         <input type="text" class="form-control form-control-border" name="first_name">

@@ -23,7 +23,7 @@
                             <div style="background-image: url(<?= $postCover; ?>);"
                                  class="cover embed rounded"></div>
                             <h3 class="tittle">
-                                <a target="_blank" href=" <?= url("/blog/{$post->uri}"); ?>">
+                                <a target="_blank" href=" <?= url("/{$post->uri}"); ?>">
                                     <?php if ($post->post_at > date("Y-m-d H:i:s")): ?>
                                         <span class="icon-clock-o"><?= $post->title; ?></span>
                                     <?php else: ?>
