@@ -444,11 +444,11 @@ class Web extends Controller
      */
     public function contactSend(array $data): void
     {
-//        if (request_limit("contactsend", 1, 60 * 5)) {
-//            $json['message'] = $this->message->error("Aguarde 5 minutos para tentar solicitar novamente.")->render();
-//            echo json_encode($json);
-//            return;
-//        }
+        if (request_limit("contactsend", 1, 60 * 5)) {
+            $json['message'] = $this->message->error("Aguarde 5 minutos para tentar solicitar novamente.")->render();
+            echo json_encode($json);
+            return;
+        }
 
         if (in_array("", $data)) {
             $json['message'] = $this->message->warning("Existem campos em branco!")->before("Ooops: ")->render();

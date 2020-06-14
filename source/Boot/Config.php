@@ -109,14 +109,14 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 /**
  * MAIL
  */
-define("CONF_MAIL_HOST", "smtp.sendgrid.net");
-define("CONF_MAIL_PORT", "587");
-define("CONF_MAIL_USER", "apikey");
-define("CONF_MAIL_PASS", "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");
+define("CONF_MAIL_HOST", "mail.midiaagro.com.br");
+define("CONF_MAIL_PORT", "465");
+define("CONF_MAIL_USER", "naoresponda@midiaagro.com.br");
+define("CONF_MAIL_PASS", "EOHT{(6huh6r");
 define("CONF_MAIL_SENDER", ["name" => "Midiaagro", "address" => "naoresponda@midiaagro.com.br"]);
 define("CONF_MAIL_SUPPORT", "contato@midiaagro.com.br");
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);
 define("CONF_MAIL_OPTION_AUTH", true);
-define("CONF_MAIL_OPTION_SECURE", "tls");
+define("CONF_MAIL_OPTION_SECURE", "ssl");
 define("CONF_MAIL_OPTION_CHARSET", "utf-8");
