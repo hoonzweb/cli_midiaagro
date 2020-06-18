@@ -1,9 +1,8 @@
 <?php
 
-require __DIR__ . "/../vendor/autoload.php";
+require_once __DIR__ . "/../vendor/autoload.php";
 
 /**
- * SEND QUEUE
+ * Dispara e-mails da fila
  */
-$emailQueue = new \Source\Support\Email();
-$emailQueue->sendQueue();
+(new \Source\Support\Email())->sendQueue();

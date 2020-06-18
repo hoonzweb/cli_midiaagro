@@ -30,6 +30,8 @@
 
     <link href="<?= theme("/assets/images/favicon.png"); ?>" rel="icon" type="image/png">
     <link rel="stylesheet" href="<?= theme("/assets/style.css"); ?>">
+
+    <script data-ad-client="ca-pub-6292645270165388" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
