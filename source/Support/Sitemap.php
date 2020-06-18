@@ -129,7 +129,7 @@ class Sitemap
                 $this->RSS .= '<link>' . url("/{$post->uri}") . '</link>' . "\r\n";
                 $this->RSS .= '<pubDate>' . date('D, d M Y H:i:s O', strtotime($post->post_at)) . '</pubDate>' . "\r\n";
                 $this->RSS .= '<description>' . str_replace('&', 'e', $post->subtitle) . '</description>' . "\r\n";
-                $this->RSS .= '<enclosure type="image/*" url="'.url("/{$post->cover}").'" />' . "\r\n";
+                $this->RSS .= '<enclosure type="image/*" url="'.url("/storage/{$post->cover}").'" />' . "\r\n";
                 $this->RSS .= '</item>' . "\r\n";
             endforeach;
         endif;
