@@ -103,7 +103,7 @@ define("CONF_UPLOAD_MEDIA_DIR", "medias");
  * IMAGES
  */
 define("CONF_IMAGE_CACHE", CONF_UPLOAD_DIR . "/" . CONF_UPLOAD_IMAGE_DIR . "/cache");
-define("CONF_IMAGE_SIZE", 2000);
+define("CONF_IMAGE_SIZE", 1920);
 define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 
 /**
