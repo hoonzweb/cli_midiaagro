@@ -664,6 +664,10 @@ body {
     line-height: 1.5;
 }
 
+.post_paragraph_large{
+    font-size: 80%;
+}
+
 .main_footer {
     background-color: var(--color-primary);
     color: #fff;
@@ -725,6 +729,10 @@ body {
 
     .post_title_large {
         font-size: var(--font-medium);
+    }
+
+    .post_paragraph_large{
+        font-size: var(--font-normal);
     }
 }
 

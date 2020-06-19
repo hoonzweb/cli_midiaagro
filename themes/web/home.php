@@ -179,7 +179,7 @@
 
 <div class="container">
     <div class="row">
-        <section class="col-12 col-lg-7 col-xl-8">
+        <section class="col-12 col-lg-7 col-xl-8 mb-4">
             <header class="section_header">
                 <h2 class="section_header_title">Sabores do Campo</h2>
             </header>
@@ -193,7 +193,7 @@
                             "p" => true,
                             "cat" => false,
                             "tsize" => "post_title_large",
-                            "psize" => "small"
+                            "psize" => "post_paragraph_large"
                         ]); ?>
                     <?php else: ?>
                         <?= $v->insert("blog-list", [
@@ -218,12 +218,12 @@
                     <?= $v->insert("blog-list", [
                         "video" => ($post->video ? true : false),
                         "post" => $post,
-                        "class" => "col-6 col-lg-12 mb-lg-4",
+                        "class" => "col-6 col-lg-12 mb-4",
                     ]); ?>
                 <?php endforeach; endif; ?>
 
                 <!-- ANÚNCIO -->
-                <div class="col-12 col-sm-8 col-md-6 mx-sm-auto col-lg-12 mt-4 mt-md-0 j_ads">
+                <div class="col-12 col-sm-8 col-md-6 mx-sm-auto col-lg-12 j_ads">
                     <a href="#" title="Ciso Odontologia">
                         <img src="<?= theme("assets/images/ciso-odonto-ads-380.png"); ?>" alt="Ciso Odontologia"
                              class="d-block">
